@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "almond",
   "name": "Omnipair Docs",
   "colors": {
     "primary": "#00E898",
@@ -13,6 +13,22 @@
     "dark": "/logo/dark.svg"
   },
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "GitHub",
+          "icon": "github",
+          "hidden": true,
+          "href": "https://github.com/omnipair"
+        },
+        {
+          "anchor": "Discord",
+          "icon": "discord",
+          "hidden": true,
+          "href": "https://discord.gg/omnipair"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Documentation",
@@ -75,26 +91,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Launch App",
-          "href": "https://app.omnipair.fi",
-          "icon": "arrow-up-right-from-square"
-        },
-        {
-          "anchor": "GitHub",
-          "href": "https://github.com/omnipair",
-          "icon": "github"
-        },
-        {
-          "anchor": "Discord",
-          "href": "https://discord.gg/omnipair",
-          "icon": "discord"
-        }
-      ]
-    }
+    ]
   },
   "navbar": {
     "links": [
