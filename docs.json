@@ -1,54 +1,62 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Omnipair Docs",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#00E898",
     "light": "#07C983",
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Introduction",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "introduction",
+              "omnipair/problem",
+              "omnipair/solution"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Technical breakdown",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "technical-breakdown/overview",
+              "technical-breakdown/generalized-automated-market-maker",
+              "technical-breakdown/slippage-aware-collateral-factor",
+              "technical-breakdown/liquidations-debt-write-off",
+              "technical-breakdown/risk-and-safe-design",
+              "technical-breakdown/customizable-pools"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Governance",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "governance/what-is-omfg",
+              "governance/governance-model",
+              "governance/protocol-governable-parameters"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Use cases",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "use-cases/leveraging",
+              "use-cases/borrowing",
+              "use-cases/liquidity-provisioning-earn"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Code Reference",
         "groups": [
           {
             "group": "API documentation",
@@ -71,52 +79,51 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Launch App",
+          "href": "https://app.omnipair.fi",
+          "icon": "arrow-up-right-from-square"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "GitHub",
+          "href": "https://github.com/omnipair",
+          "icon": "github"
+        },
+        {
+          "anchor": "Discord",
+          "href": "https://discord.gg/omnipair",
+          "icon": "discord"
         }
       ]
     }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://discord.gg/omnipair"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Launch App",
+      "href": "https://app.omnipair.fi"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/omnipair",
+      "github": "https://github.com/omnipair"
     }
   }
 }

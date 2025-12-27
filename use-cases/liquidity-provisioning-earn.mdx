@@ -1,0 +1,43 @@
+---
+title: "Liquidity Provisioning (Earn)"
+description: "How liquidity providers earn on Omnipair."
+---
+
+# Liquidity Provisioning (Earn)
+
+Interest flows directly into the reserve — meaning LPs benefit automatically without active management.
+
+## Streaming Collateral (Liquidations)
+
+If a borrower becomes insolvent:
+
+- Their debt is written off
+- Their collateral is streamed into the pool reserves over time
+- This avoids reserve volatility and protects LPs from dump risk
+
+## Risk Profile
+
+| Risk             | Explanation                                    | Mitigation                                 |
+| ---------------- | ---------------------------------------------- | ------------------------------------------ |
+| Impermanent Loss | Applies during volatile swaps, similar to AMMs | Offset by borrow interest                  |
+| Credit Risk      | Borrowers may default                          | EMA pricing + isolated pools + CF caps     |
+| Liquidity Lock   | Excessive utilization can slow LP withdrawals  | Dynamic interest rate incentivizes balance |
+
+## LP Withdrawals
+
+When you remove liquidity:
+
+- You receive back your pro-rata share of Token0 and Token1
+- Withdrawals check solvency: pool must remain collateralized
+- If utilization is too high, part of your liquidity may be temporarily "locked" (as borrowed funds)
+
+## Design Rationale
+
+- **Unified pool** = better capital efficiency
+- **Streamed liquidations** = smoother LP experience
+- **Interest model** = rewards LPs without volatility
+
+## Summary
+
+LPs in Omnipair earn like both Uniswap LPs and Aave lenders — all in one position. While risks are present, they're transparent and isolated per pair, with protective design choices to keep capital safe and productive.
+
