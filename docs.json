@@ -3,9 +3,9 @@
   "theme": "almond",
   "name": "Omnipair Docs",
   "colors": {
-    "primary": "#00E898",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#3C64FF",
+    "light": "#49BF80",
+    "dark": "#006F36"
   },
   "favicon": "/favicon.svg",
   "logo": {
@@ -120,7 +120,14 @@
   "footer": {
     "socials": {
       "x": "https://x.com/omnipair",
-      "github": "https://github.com/omnipair"
+      "github": "https://github.com/omnipair",
+      "discord": "https://discord.gg/omnipair"
     }
+  },
+  "appearance": {
+    "default": "system"
+  },
+  "background": {
+    "decoration": "gradient"
   }
 }
