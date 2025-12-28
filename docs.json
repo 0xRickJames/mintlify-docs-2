@@ -132,7 +132,7 @@
   },
   "description": "Omnipair enables permissionless spot and margin trading without oracles, using isolated collateral pools and on-chain mechanisms to support long-tail markets on Solana.",
   "thumbnails": {
-    "background": "/images/thumbnail-2.svg"
+    "background": "/images/thumbnail.svg"
   },
   "styling": {
     "eyebrows": "breadcrumbs"
